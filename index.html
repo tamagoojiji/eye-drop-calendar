@@ -210,7 +210,7 @@ function renderCalendar() {
   // 各週の行数: 1回→2行(日付+チェック)、2回→3行(日付+朝+夜)
   const rowsPerWeek = freq === 1 ? 2 : 3;
   // A4横: 210mm, padding上下0.5mm×2, タイトル約10mm, ヘッダー8mm, 罫線余白5mm
-  const availH = 210 - 1 - 10 - 8 - 4.5;
+  const availH = 210 - 1 - 12 - 8 - 5;
   // 全行を均等割り
   const totalRows = weeks * rowsPerWeek;
   const rowH = Math.floor(availH / totalRows * 10) / 10;
